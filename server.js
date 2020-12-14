@@ -13,7 +13,10 @@ const sess = {
     secret: 'This Secret',
     resave: false,
     saveUninitialized: true,
-}
+    store: new SequelizeStore({
+        db: sequelize
+    })
+};
 
 // Set up te express app
 const app = express();
