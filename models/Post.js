@@ -16,11 +16,11 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        post_url: {
+        blog: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isUrl: true
+                len: [1]
             }
         },
         user_id: {
