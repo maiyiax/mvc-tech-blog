@@ -1,0 +1,58 @@
+:root {
+    --primary: #b3cccc;
+    --secondary: #30261d;
+    --gray:  #d9d9d9;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+header {
+    background-color: var(--secondary);
+    padding: 2%;
+}
+
+header h1 {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-weight: bold;
+    padding: 1%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px var(--gray); 
+    width: fit-content;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+form label {
+    color: var(--secondary);
+    font-size: 12pt;
+    font-weight: bolder;
+}
+
+/* Card Styling */
+
+.card {
+    border: 2px var(--secondary) solid;
+    margin: 1%;
+}
+
+.card-header {
+    background-color: var(--secondary);
+    padding: 5px;
+}
+
+.card-header a, .card-header p{
+    color: var(--primary);
+}
+
+.card-content {
+    background-color: var(--primary);
+}
+

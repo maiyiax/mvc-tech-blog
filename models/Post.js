@@ -17,7 +17,7 @@ Post.init(
             allowNull: false
         },
         blog: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(2000),
             allowNull: false,
             validate: {
                 len: [1]

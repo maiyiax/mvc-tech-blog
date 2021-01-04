@@ -1,18 +1,12 @@
 // This file will contain all of the user-facing routes, such as the homepage and login page
 
-const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const router = require('express').Router();
 
 // find all posts for homepage
 router.get('/', (req, res) => {
     Post.findAll({
-        attributes: [
-            'id',
-            'blog',
-            'title',
-            'created_at',
-        ],
+        attributes: ['id', 'title', 'blog', 'created_at'],
         include: [
             {
                 model: Comment,
@@ -31,10 +25,7 @@ router.get('/', (req, res) => {
     .then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
 
-        res.render('homepage', {
-            posts,
-            loggedIn: req.session.loggedIn
-        });
+        res.render('homepage', { posts, loggedIn: req.session.loggedIn });
     })
     .catch(err => {
         console.log(err);
@@ -48,7 +39,7 @@ router.get('/post/:id', (req, res) => {
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+        attributes: ['id', 'blog', 'title', 'created_at'],
         include: [
             {
                 model: Comment,
