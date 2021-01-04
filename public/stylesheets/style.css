@@ -56,3 +56,13 @@ form label {
     background-color: var(--primary);
 }
 
+.comment-form button {
+    width: 100%;
+    align-content: center;
+}
+
+.meta {
+    width: 100%;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
