@@ -36,19 +36,31 @@ form label {
     font-weight: bolder;
 }
 
+.new-post-form input {
+    width: 100%;
+    padding: 2%;
+}
+
+
 /* Card Styling */
 
 .card {
     border: 2px var(--secondary) solid;
     margin: 1%;
+    background-color: var(--primary);
+}
+
+.card-body {
+    background-color: var(--primary);
 }
 
 .card-header {
     background-color: var(--secondary);
     padding: 5px;
+    color: var(--primary);
 }
 
-.card-header a, .card-header p{
+.card-header a, .card-header p {
     color: var(--primary);
 }
 
@@ -66,3 +78,6 @@ form label {
     background-color: var(--secondary);
     color: var(--primary);
 }
+
+
+

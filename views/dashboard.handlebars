@@ -1,18 +1,16 @@
 <!-- WHEN I click on the dashboard option in the navigation
 THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post -->
-<section>
-    <h2>Create New Post</h2>
+<section class="card">
+    <h2 class="card-header">Create New Post</h2>
 
-    <form>
-        <div class="new-post-form">
-            <label for="post-title">Title</label>
-            <input type="text" id="post-title" name="post-title" />
-        </div>
-        <div>
-            <label for="blog">Blog</label>
-            <input type="text" id="blog" name="blog" />
-        </div>
-        <button type="submit" class="btn add-blog">Create</button>
+    <form class="card-body new-post-form">
+        <label for="post-title">Title</label>
+        <input type="text" id="post-title" name="post-title" placeholder="enter title name"/>
+
+        <label for="blog">Blog</label>
+        <input type="text" id="blog" name="blog" placeholder="enter blog content"/>
+
+        <button type="submit" class="btn add-blog w-100 text-center btn-secondary mt-3">Create</button>
     </form>
 </section>
 
