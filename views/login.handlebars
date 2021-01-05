@@ -1,37 +1,40 @@
 <!-- if user has credentials, allow them to login -->
 
 <form class="login-form m-3 p-2 border border-3 border-secondary rounded-3">
+
+    <div class="form-header">
+        <h3>Existing User</h3>
+    </div>
+
     <div class="mb-3">
-        <label for="email-login" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp">
+        <label for="user-login" class="form-label">Username</label>
+        <input type="email" class="form-control" id="user-login" aria-describedby="emailHelp" placeholder="enter username">
     </div>
     <div class="mb-3">
         <label for="password-login" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password-login">
+        <input type="password" class="form-control" id="password-login" placeholder="must be at least 5 characters">
     </div>
-    <button type="submit" class="btn btn-secondary">Sign In</button>
+    <button type="submit" class="btn btn-secondary w-100 t-center">Sign In</button>
 </form>
 
 <!-- if user is new, allow them to signup -->
 
 <form class="signup-form m-3 p-2 border border-3 border-secondary rounded-3">
+    <div class="form-header">
+        <h3>New User</h3>
+    </div>
+
     <div class="mb-3">
         <label for="username-signup" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username-signup">
-    <div class="mb-3">
-        <label for="email-signup" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email-signup" aria-describedby="emailHelp">
+        <input type="text" class="form-control" id="username-signup" placeholder="enter username">
     </div>
+
     <div class="mb-3">
         <label for="password-signup" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password-signup">
+        <input type="password" class="form-control" id="password-signup" placeholder="must be at least 5 characters">
     </div>
-    <div class="col-auto">
-        <span id="passwordHelpInline" class="form-text">
-        Must be at least 5 characters.
-        </span>
-    </div>
-    <button type="submit" class="btn btn-secondary">Sign Up</button>
+
+    <button type="submit" class="btn btn-secondary w-100 t-center">Sign Up</button>
 </form>
 
 <script src="/javascript/login.js"></script>

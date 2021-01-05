@@ -41,6 +41,14 @@ form label {
     padding: 2%;
 }
 
+.form-header {
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 5px;
+    border-radius: 4px;
+}
 
 /* Card Styling */
 
@@ -66,6 +74,7 @@ form label {
 
 .card-content {
     background-color: var(--primary);
+    padding: 1%;
 }
 
 .comment-form button {
@@ -77,6 +86,7 @@ form label {
     width: 100%;
     background-color: var(--secondary);
     color: var(--primary);
+    padding-left: 5px;
 }
 
 
