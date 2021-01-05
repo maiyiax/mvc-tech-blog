@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
         include: [
             {
                 model: Post,
-                attributes: ['id', 'title', 'post_url', 'created_at']
+                attributes: ['id', 'title', 'blog', 'created_at']
             },
             {
                 model: Comment,
@@ -80,7 +80,7 @@ router.post('/login', (req, res) => {
     .then(dbUserData => {
         // if no user is found, send error message
         if (!dbUserData) {
-            res.status(400).json({ message: 'No user with that email address!' });
+            res.status(400).json({ message: 'No user with that username!' });
             return;
         }
         
@@ -100,7 +100,7 @@ router.post('/login', (req, res) => {
             res.json({ user: dbUserData, message: 'You are now logged in!'})
         })
     })
-})
+});
 
 // user logout
 router.post('/logout', (req, res) => {

@@ -36,7 +36,7 @@ form label {
     font-weight: bolder;
 }
 
-.new-post-form input {
+.new-post-form input, .edit-post-form input {
     width: 100%;
     padding: 2%;
 }
@@ -48,6 +48,17 @@ form label {
     color: var(--primary);
     padding: 5px;
     border-radius: 4px;
+}
+
+h2 {
+    padding: 1%;
+}
+
+.edit-link {
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    text-decoration: none;
 }
 
 /* Card Styling */
