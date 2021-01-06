@@ -12,6 +12,17 @@ AS a developer who writes about tech <br>
 I WANT a CMS-style blog site <br>
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
+## Table of Contents
+* [Installation](#installation)
+* [Dependencies](#dependencies)
+* [Screenshot](#screenshot)
+
+## Installation
+
+To run this application locally, clone the repository. Run `npm install` to install the dependencies listed below. Also use the list of dependencies for reference if some modules don't automatically install. You will also need access to mysql2. Once the database is created and the information is seeded, run the application by entering `npm run`. The application can then be opened in localhost.
+
+The application can also be used at the deployed site [Heroku](https://salty-dusk-80859.herokuapp.com/).
+
 ## Dependencies
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt) `npm install bcrypt`
@@ -29,7 +40,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 <br>
 
-![](./public/images/homepage.png)
+![](./public/images/homepage.PNG)
 
 <br>
 
